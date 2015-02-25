@@ -5,9 +5,12 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
    <bean id="restaurantBean" class="com.myorg.srcpkg.Restaurant">
-   <!-- <property name="welcomeNode" value="welcome to spring from config file"/>  -->
-  <constructor-arg ref="teaBean"/>
+    <!-- <property name="welcomeNode" value="welcome to spring from config file"/>  -->
+ 	<!--  <constructor-arg ref="teaBean"/>  -->
+   <property name="hotDrink" ref="teaBean"/>
    </bean>
 
   <bean id="teaBean" class="com.myorg.srcpkg.Tea"></bean>
+  
+  
 </beans>

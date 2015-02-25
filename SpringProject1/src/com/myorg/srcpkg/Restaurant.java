@@ -5,9 +5,13 @@ public class Restaurant {
 	HotDrink hotDrink;
 	
 	
-	Restaurant(HotDrink hotDrink){
-		this.hotDrink=hotDrink;
+	public void setHotDrink(HotDrink hotDrink){
+			this.hotDrink=hotDrink;
 	}
+			
+	/* Restaurant(HotDrink hotDrink){
+		this.hotDrink=hotDrink;
+	} */
 	
 	public void prepareHotDrinkRest(){
 		hotDrink.prepareHotDrink();
