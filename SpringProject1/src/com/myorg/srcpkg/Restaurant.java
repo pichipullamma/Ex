@@ -2,6 +2,19 @@ package com.myorg.srcpkg;
 
 public class Restaurant {
 
+	HotDrink hotDrink;
+	
+	
+	Restaurant(HotDrink hotDrink){
+		this.hotDrink=hotDrink;
+	}
+	
+	public void prepareHotDrinkRest(){
+		hotDrink.prepareHotDrink();
+	}
+	
+	
+	/*
 	String welcomeNode;
 	
 	
@@ -20,5 +33,5 @@ public class Restaurant {
 	System.out.println(welcomeNode);	
 	
 	}
-	
+	*/
 }

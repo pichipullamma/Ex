@@ -1,9 +1,11 @@
-package com.myorg.srcpkg;
+package com.myorg.testpkg;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MainApp {
+import com.myorg.srcpkg.Restaurant;
+
+public class TestSpringProject {
 
 	public static void main(String [] arg){
 	
@@ -12,7 +14,8 @@ public class MainApp {
 
      Restaurant r = (Restaurant) context.getBean("restaurantBean");
      
-    r.greetCustomer();
+   // r.greetCustomer();
+   r.prepareHotDrinkRest();
    
 	}
 }
